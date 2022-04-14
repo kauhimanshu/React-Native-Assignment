@@ -24,7 +24,7 @@ const configureStore = (preloadedState) => {
   const composedEnhancers = composeWithDevTools(...enhancers);
 
   const persistedReducer = persistReducer(persistConfig, reducers);
-  const store = createStore(persistedReducer, preloadedState, composedEnhancers);
+  const store = createStore(persistedReducer, preloadedState,composedEnhancers);
   const persistor = persistStore(store);
 
   sagaMiddleware.run(sagas);

@@ -16,21 +16,30 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         marginBottom: 135,
     },
+
     container3: {
         height: '80%',
     },
     TextInput: {
-        borderRadius:5,
-        paddingLeft: 17,
-        margin: 9,
+        height: 60,
+        margin: 5,
+        borderWidth: 0.5,
+        borderRadius: 13,
+        padding: 20,
+        borderColor: 'grey',
+        backgroundColor: 'black',
+        color:'white',
         
+
+
     },
     Forgottxt: {
         fontWeight: 'bold',
         fontSize: 17,
         color: 'white',
-        bottom: 10,
-        margin: 10
+        bottom: 5,
+        margin: 10,
+        //   textAlign:'center'
     },
     accountSignUpView: {
         flexDirection: 'row',
@@ -38,15 +47,16 @@ const styles = StyleSheet.create({
     },
     accounttxt: {
         paddingLeft: '15%',
-        color:'white',
-        marginTop:90
+        color: 'white',
+        marginTop: 40,
+        margin:10
     },
     SignUptxt: {
-        paddingLeft: '2%',
+        paddingLeft: '-3%',
         fontWeight: 'bold',
         fontSize: 17,
         color: 'white',
-        marginTop:87
+        marginTop: 37,
     },
     regexredError: {
         color: 'red',
@@ -59,29 +69,41 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop:30
+        marginTop: 20
     },
     SignIntxt: {
         fontSize: 17,
-        color:'black',
-        fontWeight:'bold'
+        color: 'black',
+        fontWeight: 'bold',
     },
-    
+
     FundooNotestxt: {
         fontWeight: 'bold',
         fontSize: 30,
-       marginLeft:40,
+        marginLeft: 40,
         color: `white`,
-        marginTop: 50,
-        margin:3
+        marginTop: 28,
+        margin: 3
     },
     welcomeText: {
         // fontWeight: 'bold',
         fontSize: 26,
-        marginLeft:40,
+        marginLeft: 40,
         color: `white`,
-        
+
     },
+    header: {
+        marginTop: 25,
+        paddingHorizontal: 20,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    EyeButton:{
+        // position:'absolute',
+        marginLeft: 280,
+        top:-50
+
+    }
 });
 
 export default styles;

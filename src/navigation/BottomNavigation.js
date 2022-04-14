@@ -37,7 +37,7 @@ export default BottomNavigation = () => {
                         <>
                             {
                                 focused &&
-                                <View style={{ position: 'absolute', top: 0, borderTopColor: 'red', borderTopWidth: 3, width: '100%' }} />
+                                <View style={{ position: 'absolute', top: 0, borderTopColor: 'red', borderTopWidth: 3, width: '30%' }} />
                             }
                             <Ionicons
                                 name={color == 'darkgray' ? activeIcon : InactiveIcone}

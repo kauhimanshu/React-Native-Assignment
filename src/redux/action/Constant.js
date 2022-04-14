@@ -11,4 +11,5 @@ export const VERIFY_OTP_FAILURE = "VERIFY_OTP_FAILURE";
 export const VERIFY_OTP_REQUEST = "VERIFY_OTP_REQUEST";
 export const GET_OTP_SUCCESS = "GET_OTP_SUCCESS"
 export const GET_OTP_FAILURE = "GET_OTP_FAILURE"
-         
+export const THEME_CHANGE = 'THEME_CHANGE';
+export const LANGUAGE_DATA = 'LANGUAGE_DATA';         

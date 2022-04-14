@@ -4,13 +4,9 @@ import {
   LOGIN_FAILURE,
   LOGOUT_SUCCESS,
   LOGIN_REQUEST,
-  VERIFY_OTP_SUCCESS,
-  VERIFY_OTP_FAILURE,
-  GET_OTP_SUCCESS,
-  GET_OTP_FAILURE,
-  LOGOUT_FAILURE,
 } from './Constant';
 import { storage } from '../../storage/Index';
+
 
 export const loginRequest = () => {
   return {
@@ -38,6 +34,8 @@ export const receiveLogout = () => {
     type: LOGOUT_SUCCESS,
   };
 };
+
+
 
 
 

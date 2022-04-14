@@ -42,6 +42,7 @@ const ForgotScreen =({navigation}) => {
                     <View>
                         <TextInput
                         placeholder='Email'
+                        placeholderTextColor='white'
                         style={ForgotPasswordCss.TextInput}
                         value={email}
                         onChangeText={(email) => setEmail(email)}

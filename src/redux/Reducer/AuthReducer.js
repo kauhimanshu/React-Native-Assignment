@@ -4,7 +4,9 @@ const initialState = {
     error: '',
     isFetching: false,
     accessToken: '',
-    verifyOtp: ''
+    verifyOtp: '',
+    
+    
 
 };
 const AuthReducer = (state = initialState, action) => {
@@ -36,6 +38,11 @@ const AuthReducer = (state = initialState, action) => {
                 ...state,
                 uid: action.payload
             }
+
+           
+
+
+            
 
         
 

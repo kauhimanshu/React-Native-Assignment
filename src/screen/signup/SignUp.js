@@ -10,6 +10,7 @@ const Signup = ({ navigation }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState({});
+    const[image,setImage] =useState('');
     const [isLoading, setisLoading] = useState(false)
     const validate = () => {
         let emailRegex =
@@ -40,7 +41,7 @@ const Signup = ({ navigation }) => {
 
     const onSubmit = () => {
         if (validate()) {
-            registration(email, password, fullName, navigationToDashboardPage);
+            registration(email, password, fullName,image, navigationToDashboardPage);
             console.log('Hello');
         }
     };
@@ -117,7 +118,7 @@ const Signup = ({ navigation }) => {
                                 onPress={() => {
                                     onSubmit();
                                 }}>
-                                <Text style={styles.SignUptxt}>SignUp</Text>
+                                <Text style={styles.SignUptxt}>Register</Text>
                             </TouchableOpacity>
                         )}
                     <View style={styles.TextView}>

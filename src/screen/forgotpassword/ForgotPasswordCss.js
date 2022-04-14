@@ -2,7 +2,8 @@ import { StyleSheet } from 'react-native'
 const ForgotPasswordCss = StyleSheet.create({
     container1: {
         height: '100%',
-        width: '100%'
+        width: '100%',
+        backgroundColor:'black'
     },
     container2: {
         width: '80%',
@@ -24,7 +25,8 @@ const ForgotPasswordCss = StyleSheet.create({
         borderWidth: 1,
         borderColor: 'gray',
         borderRadius:10,
-        height:50
+        height:50,
+        paddingLeft:20
     },
     BackToSignIntxtView: {
         alignItems: 'center'
@@ -34,7 +36,7 @@ SubmitButtontxt:{
 fontSize:17
 },
     buttonSubmit:{
-        backgroundColor:'#ffa500',
+        backgroundColor:'white',
         height:50,
         borderRadius:10,
         justifyContent:'center',
@@ -44,7 +46,7 @@ fontSize:17
 
     BackToSignIntxt: {
         fontWeight: 'bold',
-        color: '#ffa500',
+        color: 'white',
         top:4
 
     },

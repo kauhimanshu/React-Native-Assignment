@@ -1,6 +1,8 @@
 import React from "react";
 import { createStackNavigator } from '@react-navigation/stack';
 import BottomNavigation from "./BottomNavigation";
+import DetailScreen from "../screen/DetailScreen";
+import Setting from "../screen/Setting";
 
 
 
@@ -12,6 +14,8 @@ export const HomeStack = () => {
             headerShown: false,
         }}>
             <Stack.Screen name="BottomNavigation" component={BottomNavigation} />
+            <Stack.Screen name="DetailScreen" component={DetailScreen} />
+            <Stack.Screen name="Setting" component={Setting} />
            
             
             
