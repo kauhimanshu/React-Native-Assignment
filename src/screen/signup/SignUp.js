@@ -5,6 +5,7 @@ import { registration } from '../../api/UserServices';
 import styles from './SignUpCss';
 
 
+
 const Signup = ({ navigation }) => {
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
@@ -12,6 +13,7 @@ const Signup = ({ navigation }) => {
     const [errors, setErrors] = useState({});
     const[image,setImage] =useState('');
     const [isLoading, setisLoading] = useState(false)
+   
     const validate = () => {
         let emailRegex =
             // eslint-disable-next-line no-control-regex

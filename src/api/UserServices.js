@@ -14,6 +14,7 @@ export const registration = async (email, password,fullName,image,callBack) => {
         FullName: fullName,
         Email: email,
         Image:image,
+       
         
       });
   
@@ -34,3 +35,15 @@ export const registration = async (email, password,fullName,image,callBack) => {
     })
     .catch(err => err)
   }
+
+
+  export const uploadImage = async () => {
+    const db = firebase
+        .firestore()
+        .collection('users')
+        .doc(accessToken)
+        .update({
+            Image: image
+        })
+
+};

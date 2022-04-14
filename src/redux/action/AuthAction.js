@@ -4,6 +4,8 @@ import {
   LOGIN_FAILURE,
   LOGOUT_SUCCESS,
   LOGIN_REQUEST,
+  LOADING_START,
+  LOADING_STOP,
 } from './Constant';
 import { storage } from '../../storage/Index';
 
@@ -32,6 +34,18 @@ export const loginError = error => {
 export const receiveLogout = () => {
   return {
     type: LOGOUT_SUCCESS,
+  };
+};
+
+export const profileSuccess =() =>{
+  return {
+    type: LOADING_START,
+  };
+};
+
+export const profileFailure =() =>{
+  return{
+    type: LOADING_STOP,
   };
 };
 

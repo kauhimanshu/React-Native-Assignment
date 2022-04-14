@@ -61,6 +61,20 @@ const Profile = ({ navigation }) => {
             .update({
                 Image: image
             })
+            firebase.firestore()
+            .collection('users')
+            .doc(accessToken)
+            .get()
+            .then((documentSnapshot) => {
+                if (documentSnapshot.exists) {
+                    // console.log('User Data', documentSnapshot.data().Image);
+                    setUserData(documentSnapshot.data().Image.uri)
+                
+                  
+                }
+                
+            })
+           
 
     };
     const getDetail = async () => {
@@ -72,8 +86,17 @@ const Profile = ({ navigation }) => {
                 if (documentSnapshot.exists) {
                     // console.log('User Data', documentSnapshot.data().Image);
                     setUserData(documentSnapshot.data().Image.uri)
+                
+                  
                 }
+                
             })
+            .catch((err) =>{
+                alert(err)
+            })
+            
+           
+           
     }
 
 
@@ -82,7 +105,7 @@ const Profile = ({ navigation }) => {
     useEffect(() => {
         setMode(theme.mode)
         getDetail()
-    })
+    },)
 
 
     return (

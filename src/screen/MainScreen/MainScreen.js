@@ -24,7 +24,7 @@ const MainScreen =({navigation}) =>{
             <Text style={styles.smallText}>Bring together your files, your tools{'\n'} 
             projects and people. Including a new {'\n'} mobile and desktop application.</Text>
             </View>
-            <View style={{flexDirection:'row',}}>
+            <View style={{flexDirection:'row'}}>
             <TouchableOpacity style={styles.Registerbtn} onPress={() => navigation.navigate('Signup')}>
                 <Text style={{color:'black'}}>Register</Text>
             </TouchableOpacity>
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         backgroundColor: 'white',
         height: 55,
-        width: 170,
+        width: 180,
         marginTop: 140,
         borderRadius: 20,
         justifyContent: 'center',
@@ -84,9 +84,9 @@ const styles = StyleSheet.create({
     },
     SignInBtn:{
        
-        backgroundColor: 'black',
+        backgroundColor: 'grey',
         height: 55,
-        width: 170,
+        width: 180,
         marginTop: 140,
         borderRadius: 20,
         justifyContent: 'center',

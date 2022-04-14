@@ -7,6 +7,7 @@ const initialState = {
     verifyOtp: '',
     
     
+    
 
 };
 const AuthReducer = (state = initialState, action) => {

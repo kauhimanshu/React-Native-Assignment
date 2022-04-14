@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
     },
     heart:{
         marginRight:40,
-        color:'deeppink',
+        color: '#Ce396f',
         
         
         
